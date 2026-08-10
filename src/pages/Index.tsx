@@ -1,16 +1,12 @@
 import { useDemo } from "../context/DemoContext";
-import DemoLogo from "../components/DemoLogo";
 
 export default function Index() {
-  const { demo, setDemo } = useDemo();
+  const { demo } = useDemo();
 
   return (
     <div style={{ padding: "30px", width: "100%", maxWidth: "900px" }}>
-      <DemoLogo />
-
       <h1>Welcome back, {demo.account.username}</h1>
 
-      {/* ACCOUNT SECTION */}
       <section style={{ marginTop: "20px" }}>
         <h2>Account</h2>
         <p><strong>Username:</strong> {demo.account.username}</p>
@@ -20,7 +16,6 @@ export default function Index() {
         )}
       </section>
 
-      {/* EMOTIONS SECTION */}
       <section style={{ marginTop: "20px" }}>
         <h2>Emotions</h2>
         <p>Happiness: {demo.emotions.happiness}</p>
@@ -29,7 +24,6 @@ export default function Index() {
         <p>Energy: {demo.emotions.energy}</p>
       </section>
 
-      {/* BEHAVIOR SECTION */}
       <section style={{ marginTop: "20px" }}>
         <h2>Behavior</h2>
         <p>Streaming: {demo.behavior.streaming ? "Yes" : "No"}</p>
@@ -38,21 +32,18 @@ export default function Index() {
         <p>Active App: {demo.behavior.activeApp}</p>
       </section>
 
-      {/* INVENTORY SECTION */}
       <section style={{ marginTop: "20px" }}>
         <h2>Inventory</h2>
         <p>Gems: {demo.inventory.gems}</p>
         <p>Items: {demo.inventory.items.length > 0 ? demo.inventory.items.join(", ") : "None"}</p>
       </section>
 
-      {/* SETTINGS SECTION */}
       <section style={{ marginTop: "20px" }}>
         <h2>Settings</h2>
         <p>Theme: {demo.settings.theme}</p>
         <p>Notifications: {demo.settings.notifications ? "On" : "Off"}</p>
       </section>
 
-      {/* FUTURE OS APPS */}
       <section style={{ marginTop: "40px" }}>
         <h2>Demo OS Apps</h2>
         <ul>
