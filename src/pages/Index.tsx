@@ -5,7 +5,7 @@ export default function Index() {
     <div
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        background: "linear-gradient(135deg, #7b2ff7, #9f44f8, #c471ed)",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -19,42 +19,45 @@ export default function Index() {
       {/* HERO TITLE */}
       <h1
         style={{
-          fontSize: "56px",
+          fontSize: "64px",
           fontWeight: "bold",
           marginBottom: "20px",
+          textShadow: "0 4px 20px rgba(0,0,0,0.3)",
         }}
       >
-        Welcome to Demo OS
+        Demo OS
       </h1>
 
       {/* SUBTEXT */}
       <p
         style={{
-          fontSize: "20px",
-          maxWidth: "600px",
+          fontSize: "22px",
+          maxWidth: "650px",
           lineHeight: "1.6",
-          opacity: 0.9,
+          opacity: 0.95,
         }}
       >
-        A modern AI‑powered experience built for speed, simplicity, and creativity.
+        A next‑generation AI experience designed for creativity, speed, and simplicity.
+        Built to feel alive, responsive, and beautifully futuristic.
       </p>
 
       {/* CTA BUTTON */}
       <button
         style={{
-          marginTop: "40px",
-          padding: "14px 28px",
-          fontSize: "18px",
-          borderRadius: "10px",
+          marginTop: "50px",
+          padding: "16px 32px",
+          fontSize: "20px",
+          borderRadius: "12px",
           backgroundColor: "white",
-          color: "#333",
+          color: "#5a2be7",
           border: "none",
           cursor: "pointer",
           fontWeight: "bold",
+          boxShadow: "0 6px 20px rgba(0,0,0,0.25)",
           transition: "0.3s",
         }}
-        onMouseOver={(e) => (e.currentTarget.style.opacity = "0.85")}
-        onMouseOut={(e) => (e.currentTarget.style.opacity = "1")}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
       >
         Get Started
       </button>
