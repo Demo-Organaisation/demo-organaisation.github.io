@@ -4,7 +4,7 @@ import Index from "./pages/Index";
 
 export default function App() {
   return (
-    <BrowserRouter baseroute="/">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Index />} />
       </Routes>
